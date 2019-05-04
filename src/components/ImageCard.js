@@ -22,12 +22,19 @@ class ImageCard extends React.Component{
         this.setState({spans})
     }
 
+    downloadImage = () => {
+
+        const {image} = this.props;
+        this.props.display(image);
+    }
+
+
     render() {
         const {description, urls} = this.props.image;
 
         return(
             <div style={{gridRowEnd: `span ${this.state.spans}`}}>
-                <img ref={this.imageRef} alt={description} src={urls.regular} />
+                <img className="selected-image" ref={this.imageRef} alt={description} src={urls.regular} onClick={this.downloadImage}/>
             </div>
         )
     }

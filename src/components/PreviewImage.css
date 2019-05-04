@@ -1,0 +1,15 @@
+
+.PreviewImage {
+    background: #00000066;
+    padding: 30px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.PreviewImage img {
+    max-width: 100%;
+    vertical-align: middle;
+}
