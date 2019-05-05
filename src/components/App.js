@@ -13,6 +13,8 @@ class App extends React.Component{
         display: "false"
     }
 
+
+    ///////////////////////////////////
     onSearchSubmit = async term => {
         const response = await unsplash.get('search/photos', {
             params : {
@@ -23,19 +25,31 @@ class App extends React.Component{
 
         this.setState({images: response.data.results})
     }
+    ///////////////////////////////////
 
+
+    ///////////////////////////////////
     displayImage = image => {
-
-
         this.setState({
             display: "true",
             selectedImage: image
         });
     }
+    ///////////////////////////////////
+
+
+    ///////////////////////////////////
+    hiddenDisplayImage = () => {
+        this.setState({display:"false"})
+    }
+    ///////////////////////////////////
+
 
     render() {
 
-        const displayImage = this.state.display === "true" ? <PreviewImage image={this.state.selectedImage} /> : console.log("RRRRR");
+        const displayImage = this.state.display === "true"
+            ? <PreviewImage image={this.state.selectedImage} hiddenDisplay={this.hiddenDisplayImage}/>
+            : null;
 
         return (
             <div>
