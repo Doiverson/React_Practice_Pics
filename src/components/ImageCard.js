@@ -12,9 +12,11 @@ class ImageCard extends React.Component{
         this.imageRef = React.createRef();
     }
 
+
     componentDidMount() {
         this.imageRef.current.addEventListener('load', this.setSpans)
     }
+
 
     setSpans = () => {
         const height = this.imageRef.current.clientHeight;
@@ -22,7 +24,8 @@ class ImageCard extends React.Component{
         this.setState({spans})
     }
 
-    downloadImage = () => {
+
+    displayImage = () => {
 
         const {image} = this.props;
         this.props.display(image);
@@ -34,7 +37,7 @@ class ImageCard extends React.Component{
 
         return(
             <div style={{gridRowEnd: `span ${this.state.spans}`}}>
-                <img className="selected-image" ref={this.imageRef} alt={description} src={urls.regular} onClick={this.downloadImage}/>
+                <img className="selected-image" ref={this.imageRef} alt={description} src={urls.regular} onClick={this.displayImage}/>
             </div>
         )
     }

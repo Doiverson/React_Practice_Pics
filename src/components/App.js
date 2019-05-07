@@ -2,13 +2,15 @@ import React from 'react';
 import unsplash from '../api/unsplash';
 import SearchBar from './SearchBar';
 import ImageList from './ImageList';
+import CollectionList from './CollectionList';
 import PreviewImage from './PreviewImage';
+import DropdownList from './DropdownList';
 
 
 class App extends React.Component{
 
     state = {
-        images : [],
+        images: [],
         selectedImage: "",
         display: "false"
     }
@@ -16,10 +18,10 @@ class App extends React.Component{
 
     ///////////////////////////////////
     onSearchSubmit = async term => {
-        const response = await unsplash.get('search/photos', {
+        const response = await unsplash.get('search/collections', {
             params : {
                 query : term,
-                per_page: 30
+                per_page: 2
             },
         });
 
@@ -47,6 +49,8 @@ class App extends React.Component{
 
     render() {
 
+        console.log(this.state.images);
+
         const displayImage = this.state.display === "true"
             ? <PreviewImage image={this.state.selectedImage} hiddenDisplay={this.hiddenDisplayImage}/>
             : null;
@@ -55,8 +59,10 @@ class App extends React.Component{
             <div>
                 {displayImage}
                 <div className="ui container" style={{marginTop: '10px'}}>
-                    <SearchBar onSubmit={this.onSearchSubmit}/>
-                    <ImageList　images={this.state.images} display={this.displayImage}/>
+                    <SearchBar placeholderText="Search" onSubmit={this.onSearchSubmit}/>
+                    <h2>By</h2><DropdownList/>
+                    {/*<ImageList　images={this.state.images} display={this.displayImage}/>*/}
+                    <CollectionList collections={this.state.images}/>
                 </div>
             </div>
         )
