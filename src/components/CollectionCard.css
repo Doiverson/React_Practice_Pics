@@ -1,20 +1,41 @@
 
 .collection-box {
-    background: orange;
     display: flex;
-    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .image-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 0 10px;
-    grid-auto-rows: 10px;
+    width: 48%;
+    height: 300px;
+    display: flex;
+    border-radius: 6px;
+    perspective: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: 5px;
 }
 
-.image-box img {
-    width: 250px;
-    grid-row-end: span 2;
+.left-column {
+    width: 70%;
 }
 
+.left-column img,
+.right-column img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.upper,
+.lower {
+    flex-grow: 1;
+}
 

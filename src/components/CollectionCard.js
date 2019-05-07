@@ -1,20 +1,39 @@
 import React from 'react';
 import './CollectionCard.css';
 
-const CollectionCard = (props) => {
+class CollectionCard extends React.Component {
 
-    const {preview_photos} = props.collection;
+    state = {
+        collectionArr: []
+    }
 
-    return(
+    componentWillMount() {
+        const {preview_photos} = this.props.collection;
+        const collectionArr = preview_photos.map(photo => {
+            return photo
+        })
+        this.setState({collectionArr})
+    }
 
-        <div className="image-box">
-        {preview_photos.map(photo => {
-            return <img key={photo.id} src={photo.urls.regular} alt=""/>
-        })}
-        </div>
+    render() {
 
-    )
+        console.log(this.state.collectionArr);
 
+        return(
+
+            <div className="image-box">
+                <div className="left-column">
+                    <img src={this.state.collectionArr[0].urls.regular} alt=""/>
+                </div>
+                <div className="right-column">
+                    <div className="upper"><img src={this.state.collectionArr[1].urls.regular} alt=""/></div>
+                    <div className="lower"><img src={this.state.collectionArr[2].urls.regular} alt=""/></div>
+                </div>
+            </div>
+
+        )
+
+    }
 }
 
 export default CollectionCard;

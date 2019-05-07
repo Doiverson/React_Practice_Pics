@@ -21,7 +21,7 @@ class App extends React.Component{
         const response = await unsplash.get('search/collections', {
             params : {
                 query : term,
-                per_page: 2
+                per_page: 10
             },
         });
 
