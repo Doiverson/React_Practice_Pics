@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React_Practice_Pics/static/css/main.3952db3d.chunk.css",
-    "main.js": "/React_Practice_Pics/static/js/main.536f63a9.chunk.js",
-    "main.js.map": "/React_Practice_Pics/static/js/main.536f63a9.chunk.js.map",
-    "runtime~main.js": "/React_Practice_Pics/static/js/runtime~main.26074941.js",
-    "runtime~main.js.map": "/React_Practice_Pics/static/js/runtime~main.26074941.js.map",
-    "static/js/2.1ca917ef.chunk.js": "/React_Practice_Pics/static/js/2.1ca917ef.chunk.js",
-    "static/js/2.1ca917ef.chunk.js.map": "/React_Practice_Pics/static/js/2.1ca917ef.chunk.js.map",
-    "index.html": "/React_Practice_Pics/index.html",
-    "precache-manifest.a376adbb723ade3d9ba011d41937b6f7.js": "/React_Practice_Pics/precache-manifest.a376adbb723ade3d9ba011d41937b6f7.js",
-    "service-worker.js": "/React_Practice_Pics/service-worker.js",
-    "static/css/main.3952db3d.chunk.css.map": "/React_Practice_Pics/static/css/main.3952db3d.chunk.css.map"
+    "main.css": "/React_unsplashAPI_imageSearch_app//static/css/main.a5c67099.chunk.css",
+    "main.js": "/React_unsplashAPI_imageSearch_app//static/js/main.7a9bf22c.chunk.js",
+    "main.js.map": "/React_unsplashAPI_imageSearch_app//static/js/main.7a9bf22c.chunk.js.map",
+    "runtime~main.js": "/React_unsplashAPI_imageSearch_app//static/js/runtime~main.9b4b4709.js",
+    "runtime~main.js.map": "/React_unsplashAPI_imageSearch_app//static/js/runtime~main.9b4b4709.js.map",
+    "static/js/2.d840755c.chunk.js": "/React_unsplashAPI_imageSearch_app//static/js/2.d840755c.chunk.js",
+    "static/js/2.d840755c.chunk.js.map": "/React_unsplashAPI_imageSearch_app//static/js/2.d840755c.chunk.js.map",
+    "index.html": "/React_unsplashAPI_imageSearch_app//index.html",
+    "precache-manifest.2c01c8d990c7efea5693bf682ea456a0.js": "/React_unsplashAPI_imageSearch_app//precache-manifest.2c01c8d990c7efea5693bf682ea456a0.js",
+    "service-worker.js": "/React_unsplashAPI_imageSearch_app//service-worker.js",
+    "static/css/main.a5c67099.chunk.css.map": "/React_unsplashAPI_imageSearch_app//static/css/main.a5c67099.chunk.css.map"
   }
 }
