@@ -17,8 +17,6 @@ class CollectionCard extends React.Component {
 
     render() {
 
-        console.log(this.state.collectionArr);
-
         return(
 
             <div className="image-box">
