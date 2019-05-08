@@ -2,7 +2,7 @@
   "name": "pics",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://doiverson.github.io/React_Practice_Pics/",
+  "homepage": "https://doiverson.github.io/React_unsplashAPI_imageSearch_app//",
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "gh-pages": "^2.0.1",
