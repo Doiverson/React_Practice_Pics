@@ -1,4 +1,8 @@
 
+.display-wrapper {
+    text-align: center;
+}
+
 .image-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

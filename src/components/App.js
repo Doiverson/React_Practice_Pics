@@ -14,6 +14,9 @@ import DropdownList from './DropdownList';
 class App extends React.Component{
 
     state = {
+        perPage: 10,
+        totalPage: 100,
+        currentTerm: "",
         images: [],
         selectedImage: "",
         display: "false",
@@ -26,7 +29,22 @@ class App extends React.Component{
         const response = await unsplash.get(`search/${this.state.selectedDropdown}`, {
             params : {
                 query : term,
-                per_page: 30
+                per_page: this.state.perPage,
+            },
+        });
+
+        this.setState({images: response.data.results, currentTerm: term})
+    }
+    ///////////////////////////////////
+
+
+    ///////////////////////////////////
+    changeCurrentPage = async pageNumber => {
+        const response = await unsplash.get(`search/${this.state.selectedDropdown}`, {
+            params : {
+                query : this.state.currentTerm,
+                page: pageNumber,
+                per_page: this.state.perPage,
             },
         });
 
@@ -76,7 +94,7 @@ class App extends React.Component{
 
         switch (selectedDropdown) {
             case "photos":
-                Content = <ImageList　images={this.state.images} display={this.displayImage}/>;
+                Content = <ImageList changePage={this.changeCurrentPage} images={this.state.images} display={this.displayImage} perPage={this.state.perPage} totalPage={this.state.totalPage}/>;
                 break;
             case "collections":
                 Content = <CollectionList collections={this.state.images}/>;
