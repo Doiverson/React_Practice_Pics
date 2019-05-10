@@ -9,3 +9,7 @@ header {
 .search-category {
     display: flex;
 }
+
+.display-wrapper {
+    text-align: center;
+}

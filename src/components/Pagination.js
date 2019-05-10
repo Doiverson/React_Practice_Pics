@@ -13,7 +13,7 @@ class PaginationExamplePagination extends React.Component {
 
     ///////////////////////////////////
     handlePaginationChange = (e, {activePage}) => {
-        this.setState({ activePage })
+        this.setState({ activePage });
         this.props.pageClick(activePage);
     }
     ///////////////////////////////////
