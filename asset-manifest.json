@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React_unsplashAPI_imageSearch_app//static/css/main.a5c67099.chunk.css",
-    "main.js": "/React_unsplashAPI_imageSearch_app//static/js/main.7a9bf22c.chunk.js",
-    "main.js.map": "/React_unsplashAPI_imageSearch_app//static/js/main.7a9bf22c.chunk.js.map",
+    "main.css": "/React_unsplashAPI_imageSearch_app//static/css/main.a67d338b.chunk.css",
+    "main.js": "/React_unsplashAPI_imageSearch_app//static/js/main.74408632.chunk.js",
+    "main.js.map": "/React_unsplashAPI_imageSearch_app//static/js/main.74408632.chunk.js.map",
     "runtime~main.js": "/React_unsplashAPI_imageSearch_app//static/js/runtime~main.9b4b4709.js",
     "runtime~main.js.map": "/React_unsplashAPI_imageSearch_app//static/js/runtime~main.9b4b4709.js.map",
-    "static/js/2.d840755c.chunk.js": "/React_unsplashAPI_imageSearch_app//static/js/2.d840755c.chunk.js",
-    "static/js/2.d840755c.chunk.js.map": "/React_unsplashAPI_imageSearch_app//static/js/2.d840755c.chunk.js.map",
+    "static/js/2.5cf477a6.chunk.js": "/React_unsplashAPI_imageSearch_app//static/js/2.5cf477a6.chunk.js",
+    "static/js/2.5cf477a6.chunk.js.map": "/React_unsplashAPI_imageSearch_app//static/js/2.5cf477a6.chunk.js.map",
     "index.html": "/React_unsplashAPI_imageSearch_app//index.html",
-    "precache-manifest.2c01c8d990c7efea5693bf682ea456a0.js": "/React_unsplashAPI_imageSearch_app//precache-manifest.2c01c8d990c7efea5693bf682ea456a0.js",
+    "precache-manifest.521457e36a52186f6e8a0feb261452bc.js": "/React_unsplashAPI_imageSearch_app//precache-manifest.521457e36a52186f6e8a0feb261452bc.js",
     "service-worker.js": "/React_unsplashAPI_imageSearch_app//service-worker.js",
-    "static/css/main.a5c67099.chunk.css.map": "/React_unsplashAPI_imageSearch_app//static/css/main.a5c67099.chunk.css.map"
+    "static/css/main.a67d338b.chunk.css.map": "/React_unsplashAPI_imageSearch_app//static/css/main.a67d338b.chunk.css.map"
   }
 }
