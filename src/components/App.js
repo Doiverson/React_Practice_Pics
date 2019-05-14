@@ -82,6 +82,13 @@ class App extends React.Component{
     ///////////////////////////////////
 
 
+    ///////////////////////////////////
+    showCollectionImages = (images) => {
+        this.setState({selectedDropdown: 'photos', images: images})
+    }
+    ///////////////////////////////////
+
+
     render() {
 
         const displayImage = this.state.display === "true"
@@ -97,7 +104,7 @@ class App extends React.Component{
                 Content = <ImageList changePage={this.changeCurrentPage} images={this.state.images} display={this.displayImage} perPage={this.state.perPage} totalPage={this.state.totalPage}/>;
                 break;
             case "collections":
-                Content = <CollectionList changePage={this.changeCurrentPage} collections={this.state.images} perPage={this.state.perPage} totalPage={this.state.totalPage}/>;
+                Content = <CollectionList changePage={this.changeCurrentPage} collections={this.state.images} showImages={this.showCollectionImages} perPage={this.state.perPage} totalPage={this.state.totalPage}/>;
                 break;
             default :
                 Content = null

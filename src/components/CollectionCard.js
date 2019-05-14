@@ -15,11 +15,17 @@ class CollectionCard extends React.Component {
         this.setState({collectionArr})
     }
 
+
+    handleShowAll = () => {
+        this.props.showImages(this.props.collection.preview_photos);
+    }
+
+
     render() {
 
         return(
 
-            <div className="image-box">
+            <div className="image-box" onClick={this.handleShowAll}>
                 <div className="left-column">
                     <img src={this.state.collectionArr[0].urls.regular} alt=""/>
                 </div>

@@ -20,11 +20,19 @@ class CollectionList extends React.Component {
     };
     ///////////////////////////////////
 
+
+    ///////////////////////////////////
+    handleShowAll = (collectionImages) => {
+        this.props.showImages(collectionImages);
+    }
+    ///////////////////////////////////
+
+
     render() {
         const collections = this.props.collections.map((collection)=>{
 
             return (
-                <CollectionCard key={collection.id} collection={collection}/>
+                <CollectionCard key={collection.id} collection={collection} showImages={this.handleShowAll}/>
             )
         })
 

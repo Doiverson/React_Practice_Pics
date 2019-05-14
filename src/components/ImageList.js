@@ -25,6 +25,7 @@ class ImageList extends React.Component {
     render() {
 
         const {images} = this.props;
+        console.log(images)
         const renderImages = images.map((image)=>{
 
             return (
